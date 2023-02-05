@@ -1,0 +1,13 @@
+C:\Users\Ömer\Desktop\Zesty File Manager\Zesty File Manager\bin\Debug\Zesty File Manager.exe.config
+C:\Users\Ömer\Desktop\Zesty File Manager\Zesty File Manager\bin\Debug\Zesty File Manager.exe
+C:\Users\Ömer\Desktop\Zesty File Manager\Zesty File Manager\bin\Debug\Zesty File Manager.pdb
+C:\Users\Ömer\Desktop\Zesty File Manager\Zesty File Manager\bin\Debug\Guna.UI.dll
+C:\Users\Ömer\Desktop\Zesty File Manager\Zesty File Manager\obj\Debug\Zesty File Manager.csproj.AssemblyReference.cache
+C:\Users\Ömer\Desktop\Zesty File Manager\Zesty File Manager\obj\Debug\Zesty File Manager.csproj.SuggestedBindingRedirects.cache
+C:\Users\Ömer\Desktop\Zesty File Manager\Zesty File Manager\obj\Debug\Zesty_File_Manager.Properties.Resources.resources
+C:\Users\Ömer\Desktop\Zesty File Manager\Zesty File Manager\obj\Debug\Zesty File Manager.csproj.GenerateResource.cache
+C:\Users\Ömer\Desktop\Zesty File Manager\Zesty File Manager\obj\Debug\Zesty File Manager.csproj.CoreCompileInputs.cache
+C:\Users\Ömer\Desktop\Zesty File Manager\Zesty File Manager\obj\Debug\Zesty File Manager.csproj.CopyComplete
+C:\Users\Ömer\Desktop\Zesty File Manager\Zesty File Manager\obj\Debug\Zesty File Manager.exe
+C:\Users\Ömer\Desktop\Zesty File Manager\Zesty File Manager\obj\Debug\Zesty File Manager.pdb
+C:\Users\Ömer\Desktop\Zesty File Manager\Zesty File Manager\obj\Debug\FileManager.Form1.resources
