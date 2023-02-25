@@ -63,12 +63,12 @@ namespace FileManager
                 {
                     var fileName = (string)file.Key;
                     var filePath = (string)file.Value;
-                    var fileSize = "";
+                    var fileSize = fileName.Length;
 
                     string[] arr = new string[3];
                     arr[0] = fileName;
                     arr[1] = filePath;
-                    arr[2] = fileSize;
+                    arr[2] = fileSize.ToString() + " Byte";
 
                     ListViewItem item = new ListViewItem(arr);
                     listView1.Items.Add(item);
