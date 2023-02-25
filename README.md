@@ -1,4 +1,4 @@
-# zestyfilemanager
+# Zesty File Manager
 Dosya Yöneticisi Uygulaması
 
 
