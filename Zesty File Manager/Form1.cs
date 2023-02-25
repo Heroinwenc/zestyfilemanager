@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,7 +9,7 @@ using System.Text;
 using Microsoft.VisualBasic;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
+using System.Collections;
 using System.Security.Cryptography;
 using System.Diagnostics;
 
@@ -24,6 +24,28 @@ namespace FileManager
             InitializeComponent();
         }
 
+        private Hashtable GetFileNames(string path)
+        {
+            var fileNames = new Hashtable();
+
+            var directories = Directory.GetDirectories(path);
+            var files = Directory.GetFiles(path);
+
+            foreach (var directory in directories)
+            {
+                var fileName = Path.GetFileName(directory);
+                fileNames.Add(fileName, directory);
+            }
+
+            foreach (var file in files)
+            {
+                var fileName = Path.GetFileName(file);
+                fileNames.Add(fileName, file);
+            }
+
+            return fileNames;
+        }
+
         private void DisplayFilesAndFolders(string path)
         {
             try
@@ -35,29 +57,13 @@ namespace FileManager
                 listView1.Columns.Add("Dosya Yolu", 300, HorizontalAlignment.Left);
                 listView1.Columns.Add("Boyut", 100, HorizontalAlignment.Left);
 
-                var directories = Directory.GetDirectories(path);
-                var files = Directory.GetFiles(path);
+                var fileNames = GetFileNames(path);
 
-                foreach (var directory in directories)
+                foreach (DictionaryEntry file in fileNames)
                 {
-                    var fileName = Path.GetFileName(directory);
-                    var filePath = directory;
+                    var fileName = (string)file.Key;
+                    var filePath = (string)file.Value;
                     var fileSize = "";
-
-                    string[] arr = new string[3];
-                    arr[0] = fileName;
-                    arr[1] = filePath;
-                    arr[2] = fileSize;
-
-                    ListViewItem item = new ListViewItem(arr);
-                    listView1.Items.Add(item);
-                }
-
-                foreach (var file in files)
-                {
-                    var fileName = Path.GetFileName(file);
-                    var filePath = file;
-                    var fileSize = new FileInfo(file).Length.ToString();
 
                     string[] arr = new string[3];
                     arr[0] = fileName;
